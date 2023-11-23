@@ -2,3 +2,12 @@
   margin: auto;
   margin-top: var(--mar-t-3);
 }
+
+.section__hero {
+  &--img {
+    transform: scale(1.1);
+  }
+}
+
+.mark {
+}
