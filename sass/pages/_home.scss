@@ -1,13 +1,11 @@
 .company__logo {
   margin: auto;
   margin-top: var(--mar-t-3);
+  margin-bottom: var();
 }
 
 .section__hero {
   &--img {
     transform: scale(1.1);
   }
-}
-
-.mark {
 }
