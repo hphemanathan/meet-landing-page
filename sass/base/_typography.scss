@@ -1,0 +1,21 @@
+:root {
+  // font size
+
+  --f-s-h1: clamp(2.5rem, 1.971830985915493rem + 2.253521126760563vw, 4rem);
+  --f-s-h2: clamp(2rem, 1.823943661971831rem + 0.7511737089201878vw, 2.5rem);
+  --f-s-ol: 1rem;
+  --f-s-body: clamp(
+    1rem,
+    0.9559859154929577rem + 0.18779342723004694vw,
+    1.125rem
+  );
+
+  //font family
+
+  --f-fa: "Red Hat Display", sans-serif;
+
+  //font weight
+
+  --f-w-b: 900;
+  --f-w-n: 500;
+}
