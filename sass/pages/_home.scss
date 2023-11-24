@@ -9,6 +9,7 @@
   margin-inline: auto;
 
   & > * {
+    text-align: center;
     margin-inline: 1.5rem;
   }
 }
@@ -84,6 +85,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-bottom: var(--mar-b-4);
   // text-align: ;
   &::before {
     content: "";
@@ -106,5 +108,31 @@
     //   border-left: 1px solid var(--clr-grey-light);
     //   height: 5.25rem;
     // }
+  }
+}
+
+.section__gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-bottom: var(--mar-b-4);
+
+  & img {
+    border-radius: 0.5rem;
+  }
+}
+
+.section__about {
+  &--outline {
+    color: var(--clr-green);
+    font-size: var(--f-s-ol);
+    font-weight: var(--f-w-b);
+    letter-spacing: 0.25rem;
+    text-transform: uppercase;
+    margin-bottom: var(--mar-b-1_5);
+  }
+
+  &--heading {
+    margin-bottom: var(--mar-b-2);
   }
 }
