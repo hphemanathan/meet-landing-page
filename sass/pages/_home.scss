@@ -123,6 +123,8 @@
 }
 
 .section__about {
+  margin-bottom: var(--mar-b-4);
+
   &--outline {
     color: var(--clr-green);
     font-size: var(--f-s-ol);
