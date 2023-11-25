@@ -1,0 +1,16 @@
+$breakpoints: (
+  "tab": 45em,
+  "tab-portrait": 51.25em,
+);
+
+@mixin tab {
+  @media (min-width: map-get($breakpoints, "tab")) {
+    @content;
+  }
+}
+
+@mixin tab-portrait {
+  @media (min-width: map-get($breakpoints, "tab-portrait")) {
+    @content;
+  }
+}
