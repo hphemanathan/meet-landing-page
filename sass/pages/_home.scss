@@ -5,6 +5,10 @@
   @include tab {
     margin-bottom: var(--mar-b-4);
   }
+
+  @include tab-portrait {
+    margin-top: var(--5rem);
+  }
 }
 
 .container {
@@ -113,6 +117,7 @@
 
   &--about {
     grid-area: content;
+    padding-inline: 5.5rem;
   }
 
   &--heading {
@@ -294,12 +299,15 @@
   }
 
   &__wrapper {
-    display: flex;
-    width: min(90%, 1120px);
-    margin-inline: auto;
-    justify-content: space-between;
-    align-items: center;
-    padding-block: 8rem;
+    text-align: center;
+    @include desktop {
+      display: flex;
+      width: min(90%, 1120px);
+      margin-inline: auto;
+      justify-content: space-between;
+      align-items: center;
+      padding-block: 8rem;
+    }
   }
 
   &__heading {
@@ -316,7 +324,7 @@
       margin-bottom: var(--2rem);
     }
 
-    @include tab-portrait {
+    @include desktop {
       margin: 0;
       padding: 0;
       text-align: left;
@@ -332,7 +340,7 @@
       margin-bottom: var(--2_5rem);
     }
 
-    @include tab-portrait {
+    @include desktop {
       margin: 0;
       text-align: left;
       padding: 0;
@@ -347,7 +355,7 @@
     padding-right: var(--2_5rem);
     padding-left: var(--2_5rem);
 
-    @include tab-portrait {
+    @include desktop {
       margin: 0;
       // margin-right: 10.31rem;
     }
