@@ -28,17 +28,19 @@
   align-items: center;
   justify-content: center;
   margin-bottom: var(--mar-b-4);
+
   @include tab {
     margin-bottom: var(--5rem);
   }
 
   @include tab-portrait {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    // grid-template-columns: repeat(autofit, 1fr);
+    grid-template-columns: 0.7fr 1.6fr 0.7fr;
     grid-template-areas: "image-left content image-right";
-
-    column-gap: 5rem;
-    width: 1440px;
+    column-gap: 3rem;
+    overflow-x: hidden;
+    width: min(100%, 90rem);
   }
 
   & > * {
@@ -68,18 +70,24 @@
     overflow-x: hidden;
 
     &-left {
+      display: none;
       @include tab-portrait {
-        //
+        display: block;
         grid-area: image-left;
         transform: scale(1.2);
+        margin-block: var(--2rem);
       }
     }
 
     &-right {
-      grid-area: image-right;
-      transform: scale(1.2);
-      justify-self: end;
-      overflow-x: hidden;
+      display: none;
+      @include tab-portrait {
+        display: block;
+        grid-area: image-right;
+        transform: scale(1.2);
+        justify-self: end;
+        overflow-x: hidden;
+      }
     }
 
     & img {
@@ -113,6 +121,11 @@
 
     @include tab {
       line-height: 3rem;
+    }
+
+    @include tab-portrait {
+      line-height: var(--4rem);
+      margin-bottom: var(--2rem);
     }
   }
 
@@ -171,12 +184,18 @@
 .section__gallery {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+
   gap: 1.5rem;
   margin-bottom: var(--mar-b-4);
 
   @include tab {
     grid-template-columns: repeat(4, 1fr);
     margin-bottom: var(--3rem);
+  }
+
+  @include tab-portrait {
+    width: min(90%, 1040px);
+    margin-inline: auto;
   }
 
   & img {
@@ -191,6 +210,11 @@
     margin-left: var(--6rem);
     margin-right: var(--6rem);
     margin-bottom: var(--4rem);
+  }
+
+  @include tab-portrait {
+    width: min(100%, 520px);
+    margin-inline: auto;
   }
 
   &--outline {
