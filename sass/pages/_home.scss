@@ -123,8 +123,13 @@
   }
 
   &--about {
-    grid-area: content;
-    padding-inline: 5.5rem;
+    @include tab-portrait {
+      grid-area: content;
+    }
+
+    @include desktop {
+      padding-inline: 5.5rem;
+    }
   }
 
   &--heading {
@@ -365,7 +370,7 @@
     &:hover,
     &:active,
     &:focus {
-      background-color: var(--clr-purple-light);
+      background-color: #b18bdd;
     }
 
     @include desktop {
