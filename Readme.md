@@ -20,7 +20,8 @@
 ### Screenshot
 
 
-![MacBook Pro-1701060626802](https://github.com/hphemanathan/meet-landing-page/assets/18226707/73814e09-2195-4ad1-900b-2e7e9d244aa4)
+![Screenshot 2023-11-27 at 10-22-53 Meet Landing Page](https://github.com/hphemanathan/meet-landing-page/assets/18226707/583fa5bb-ea22-41d4-b800-2d0af7a6f4e3)
+
 
 
 ### Links
