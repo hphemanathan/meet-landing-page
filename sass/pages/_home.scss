@@ -81,6 +81,10 @@
         transform: scale(1.2);
         margin-block: var(--2rem);
       }
+
+      @include desktop-l {
+        transform: scale(1);
+      }
     }
 
     &-right {
@@ -91,6 +95,9 @@
         transform: scale(1.2);
         justify-self: end;
         overflow-x: hidden;
+      }
+      @include desktop-l {
+        transform: scale(1);
       }
     }
 
@@ -354,6 +361,12 @@
     margin-bottom: var(--4rem);
     padding-right: var(--2_5rem);
     padding-left: var(--2_5rem);
+
+    &:hover,
+    &:active,
+    &:focus {
+      background-color: var(--clr-purple-light);
+    }
 
     @include desktop {
       margin: 0;

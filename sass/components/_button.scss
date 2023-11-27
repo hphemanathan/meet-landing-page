@@ -13,12 +13,29 @@
 .section__hero_btn--down {
   background-color: var(--clr-green);
   text-align: center;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: #71c0d4;
+  }
 }
 
 .section__hero_btn--down span {
   color: var(--clr-green-light);
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: #8fe3f9;
+  }
 }
 
 .section__hero_btn--about {
   background-color: var(--clr-purple);
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: var(--clr-purple-light);
+  }
 }
