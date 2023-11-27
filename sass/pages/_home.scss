@@ -269,7 +269,7 @@
       rgba(77, 150, 168, 0.85),
       rgba(77, 150, 168, 0.85)
     ),
-    url(../../public/mobile/image-footer.jpg);
+    url(/mobile/image-footer.jpg);
   background-size: cover;
   color: var(--clr-white);
   margin: 0;
@@ -280,7 +280,7 @@
         rgba(77, 150, 168, 0.85),
         rgba(77, 150, 168, 0.85)
       ),
-      url(../../public/tablet/image-footer.jpg);
+      url(/tablet/image-footer.jpg);
   }
 
   @include tab-portrait {
@@ -288,7 +288,7 @@
         rgba(77, 150, 168, 0.85),
         rgba(77, 150, 168, 0.85)
       ),
-      url(../../public/desktop/image-footer.jpg);
+      url(/desktop/image-footer.jpg);
 
     width: 100%;
   }
