@@ -75,3 +75,13 @@ body {
   font-weight: var(--f-w-n);
   color: var(--clr-grey-light);
 }
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer {
+  margin-top: auto;
+  z-index: -1;
+}
